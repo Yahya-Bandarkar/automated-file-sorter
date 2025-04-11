@@ -1,0 +1,16 @@
+[Setup]
+AppName=Pysort
+AppVersion=1.0
+DefaultDirName={pf}\AutoFileSorter
+DefaultGroupName=Auto File Sorter
+OutputDir=dist
+OutputBaseFilename=AutoFileSorterSetup
+Compression=lzma
+SolidCompression=yes
+
+[Files]
+Source: "Pysort.exe"; DestDir: "{app}"; Flags: ignoreversion
+
+[Icons]
+Name: "{group}\Pysort"; Filename: "{app}\Pysort.exe"
+Name: "{group}\Uninstall Pysort"; Filename: "{uninstallexe}"
